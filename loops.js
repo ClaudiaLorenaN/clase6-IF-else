@@ -171,23 +171,18 @@ mostrarFactorial(4);
 //5) Crear una función que muestre todos los números de la secuencia de fibonacci hasta el valor ingresado por parámetro.
 
 function fibonacci(numero){
-    let fibonacci;
-    let fibonacci1 = 0;
-    let fibonacci2 = 1;
-    let resultado = 0;
-
-    console.log("valor de fionachi de 1: 1");
-
-    
-    for(let i = 2; i <= numero; i++){ 
-      resultado = fibonacci1 + fibonacci2; 
-      fibonacci1 = fibonacci2;
-      fibonacci2 = resultado;               
-      console.log("valor de fionachi de " + i + ": " + resultado);
-
-    }
-  
-
+  let fibonacci1 = 0;
+  let fibonacci2 = 1;
+  let resultado = 0;
+  console.log("valor de fionachi de 1: 1");
+  for(let i = 2; i <= numero; i++){ 
+    resultado = fibonacci1 + fibonacci2; 
+    fibonacci1 = fibonacci2;
+    fibonacci2 = resultado;               
+    console.log("valor de fionachi de " + i + ": " + resultado);
+  }  
 }
-
 fibonacci(10);
+
+//const fibonacciRecursive = n => (n <= 1 ? n : fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2));
+
