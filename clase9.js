@@ -1,74 +1,74 @@
-// //desarrollo clase
-// let persona = {
-//   nombre: "Claudia",
-//   apellido: "naranjo"
-// }
+//desarrollo clase
+let persona = {
+  nombre: "Claudia",
+  apellido: "naranjo"
+}
  
-// let heroe = {
-//   nombre: "mario",
-//   trabajo: "plomero"
-// }
-// //editando propiedades de un objeto.
-// heroe.nombre = "Luigi";
-// heroe["nombre"] = "Luigi";
+let heroe = {
+  nombre: "mario",
+  trabajo: "plomero"
+}
+//editando propiedades de un objeto.
+heroe.nombre = "Luigi";
+heroe["nombre"] = "Luigi";
 
-// //agregando propiedades a un objeto
-// heroe.nacionalidad = "italiano";
-// heroe["nacionalidad"] = "Colombiano";
+//agregando propiedades a un objeto
+heroe.nacionalidad = "italiano";
+heroe["nacionalidad"] = "Colombiano";
 
-// let auto = {
-//   marca: "Ford",
-//   modelo: "Fiesta",
-//   kilometros: 0,
-//   nuevo: true,
-//   arrancar: function(){
-//     console.log("El auto se enciende");
-//   },
-//   partes: 
-//   [
-//     {nombre:"bateria", estado: "nuevo"},
-//     {nombre: "motor", estado: "nuevo"}
-//   ]
+let auto = {
+  marca: "Ford",
+  modelo: "Fiesta",
+  kilometros: 0,
+  nuevo: true,
+  arrancar: function(){
+    console.log("El auto se enciende");
+  },
+  partes: 
+  [
+    {nombre:"bateria", estado: "nuevo"},
+    {nombre: "motor", estado: "nuevo"}
+  ]
 
-// }
-// auto.partes
+}
+auto.partes
 
-// auto.partes[0] //{nombre:"bateria", estado: "nuevo"}
-// auto.partes[0].estado //nuevo
+auto.partes[0] //{nombre:"bateria", estado: "nuevo"}
+auto.partes[0].estado //nuevo
 
-// auto["partes"][1]//{nombre: "motor", estado: "nuevo"}
-// auto["partes"][1]["nombre"] // motor
+auto["partes"][1]//{nombre: "motor", estado: "nuevo"}
+auto["partes"][1]["nombre"] // motor
 
-// //ejercicio
-// let ecommerce = [
-//   {marca: "Samsung", precio: 6000, articulos: 10},
-//   {marca: "Dell notebook", precio: 4000, articulos: 30},
-//   {marca: "Auriculares Sony", precio: 1500, articulos: 15}, 
-//   {marca: "Monitor Philips", precio: 12000, articulos: 20},
-//   {marca: "Teclado Logitech", precio: 6000, articulos: 10}
-// ]
+//ejercicio
+let ecommerce = [
+  {marca: "Samsung", precio: 6000, articulos: 10},
+  {marca: "Dell notebook", precio: 4000, articulos: 30},
+  {marca: "Auriculares Sony", precio: 1500, articulos: 15}, 
+  {marca: "Monitor Philips", precio: 12000, articulos: 20},
+  {marca: "Teclado Logitech", precio: 6000, articulos: 10}
+]
 
-// function elements (arreglo, propiedad){
-//   let newArr = [];
-//   for(let i = 0; i < arreglo.length; i++){
-//     newArr.push(arreglo[i][propiedad]);
-//   }
-//   return newArr;
-// }
+function elements (arreglo, propiedad){
+  let newArr = [];
+  for(let i = 0; i < arreglo.length; i++){
+    newArr.push(arreglo[i][propiedad]);
+  }
+  return newArr;
+}
 
-// console.log(elements(ecommerce, "marca"));
+console.log(elements(ecommerce, "marca"));
 
-// /////////////////////////////////////////////////////////
-// function elementos (arreglo, propiedad){
-//   let newArr = [];
+/////////////////////////////////////////////////////////
+function elementos (arreglo, propiedad){
+  let newArr = [];
 
-//   for(let i = 0; i < arreglo.length; i++){
-//     newArr[i] = arreglo[i][propiedad];
-//   }
-//   return newArr;
-// }
+  for(let i = 0; i < arreglo.length; i++){
+    newArr[i] = arreglo[i][propiedad];
+  }
+  return newArr;
+}
 
-// console.log(elementos(ecommerce, "marca"));
+console.log(elementos(ecommerce, "marca"));
 
 
 //la lista de clientes. Trabajo en mesas
