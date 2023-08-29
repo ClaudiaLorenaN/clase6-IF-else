@@ -8,15 +8,15 @@ Luego, utiliza la función encontrarMultiplos para obtener los múltiplos de 5 h
 */
 //CODIGO
 
-function encontrarMultiplos(numero, limite){
+function encontrarMultiplos(numero, limite) {
     let array = [];
-    if (limite < numero){
+    if (limite < numero) {
         console.log("el limite deber ser mayor al numero")
     }
     for (let i = numero; i < limite; i++) {
-        if (i % numero === 0){
+        if (i % numero === 0) {
             array.push(i);
-        } 
+        }
     }
     return array
 }
@@ -48,9 +48,9 @@ let estudiantes =
             aprobado: null,
             aproboEstudiante: function () {
                 let promedio = promedioNotas(this.notas);
-                this.aprobado = estudianteAprobo(promedio);   
-                return this.aprobado;             
-            } 
+                this.aprobado = estudianteAprobo(promedio);
+                return this.aprobado;
+            }
         },
         {
             nombre: "Daniel",
@@ -58,9 +58,9 @@ let estudiantes =
             aprobado: null,
             aproboEstudiante: function () {
                 let promedio = promedioNotas(this.notas);
-                this.aprobado = estudianteAprobo(promedio);   
-                return this.aprobado;             
-            } 
+                this.aprobado = estudianteAprobo(promedio);
+                return this.aprobado;
+            }
         },
         {
             nombre: "Diana",
@@ -68,9 +68,9 @@ let estudiantes =
             aprobado: null,
             aproboEstudiante: function () {
                 let promedio = promedioNotas(this.notas);
-                this.aprobado = estudianteAprobo(promedio);   
-                return this.aprobado;             
-            } 
+                this.aprobado = estudianteAprobo(promedio);
+                return this.aprobado;
+            }
         },
         {
             nombre: "Claudia",
@@ -78,9 +78,9 @@ let estudiantes =
             aprobado: null,
             aproboEstudiante: function () {
                 let promedio = promedioNotas(this.notas);
-                this.aprobado = estudianteAprobo(promedio);   
-                return this.aprobado;             
-            } 
+                this.aprobado = estudianteAprobo(promedio);
+                return this.aprobado;
+            }
         },
 
     ];
@@ -105,7 +105,7 @@ function promedioNotas(notas) {
 }
 
 // Función para determinar si el estudiante aprobó
- function estudianteAprobo(promedio){
+function estudianteAprobo(promedio) {
     let aprobado = true;
     if (promedio >= 70) {
         aprobado = true;
@@ -113,7 +113,7 @@ function promedioNotas(notas) {
         aprobado = false;
     }
     return aprobado;
- }
+}
 
 
 
@@ -127,10 +127,10 @@ Punto 3: Arreglos y Bucles
 //CODIGO
 
 let array = [2, 3, 4, 5, 2];
-function sumaPares(){
+function sumaPares() {
     let sumPares = 0;
     for (let i = 0; i < array.length; i++) {
-        if(array[i] % 2 === 0){
+        if (array[i] % 2 === 0) {
             sumPares = sumPares + array[i];
         }
     }
@@ -149,15 +149,15 @@ Respuesta y Explicación:
 
 //CODIGO
 let array1 = [2, 3, 4, 5, 2];
-function productoImpares(){
+function productoImpares() {
     let productImpar = 1;
     for (let i = 0; i < array1.length; i++) {
-        if(array1[i] % 2 != 0){
+        if (array1[i] % 2 != 0) {
             productImpar = productImpar * array1[i];
         }
     }
     return productImpar;
-} 
+}
 console.log(productoImpares());
 
 
@@ -173,14 +173,14 @@ el impuesto es del 10% del precio; si es posterior o igual a 2010, el impuesto e
 //CODIGO
 
 let vehiculo = {
-    marca: "Mazda", 
-    modelo: "2", 
-    anio: 2009, 
+    marca: "Mazda",
+    modelo: "2",
+    anio: 2009,
     precio: 80000000,
-    impuestoAPagar: function(){
-        if(vehiculo.anio < 2010){
+    impuestoAPagar: function () {
+        if (vehiculo.anio < 2010) {
             console.log("El impuesto a pagar es del 10%: " + vehiculo.precio * 0.10);
-        }else if(vehiculo.anio >= 2010){
+        } else if (vehiculo.anio >= 2010) {
             console.log("El impuesto a pagar es del 5%: " + vehiculo.precio * 0.05);
         }
 
