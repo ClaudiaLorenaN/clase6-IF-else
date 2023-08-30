@@ -160,7 +160,6 @@ function productoImpares() {
 }
 console.log(productoImpares());
 
-
 /*
 Punto 5: Objetos y Condicionales
 11. Crea un objeto vehiculo con propiedades como marca, modelo, anio y precio.
