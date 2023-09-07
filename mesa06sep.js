@@ -1,3 +1,32 @@
+/**
+ * Declara una variable que contenga una matriz
+ * de 5x5 llena de puros numeros enteros y positivos
+ */
+
+let matriz = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20],
+    [21, 22, 23, 24, 25]
+  ];
+  
+  /**
+   * Luego, escribe un algoritmo para sumar todos
+   * los numeros en la matriz.
+   */
+  
+  let suma1 = 0;
+  
+  for (let fila = 0; fila < matriz.length; fila++) {
+    for (let col = 0; col < matriz[fila].length; col++) {
+      suma1 += matriz[fila][col];
+    }
+  }
+  console.log("la suma de la matriz 5*5 es: " +  suma1);
+
+
+
 let generarMatriz10por10 = () => {
     let matriz = [];
     for (let i = 1; i <= 10; i++) {
